@@ -1,0 +1,109 @@
+/* Importa a fonte 'Cabin' do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+*{ /* Define estilos padrão para todos os elementos */
+    margin: 0;
+    padding: 0;
+    font-family:"Cabin", sans-serif;
+    font-optical-sizing: auto;;
+}
+body{/* Estilos para o corpo da página */
+    box-sizing: border-box;
+    background-color: #59C6EB;
+    color: #611BDE;
+}
+.cabecalho{/* Estilos para o cabeçalho */
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho_menu{/* Estilos para o menu no cabeçalho */
+    display: flex;
+    gap:80px;
+}
+.menu_link{/* Estilos para os links no menu */
+    color: #611BDE;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap:18px;
+}
+.apresentacao{/* Estilos para a apresentação */
+    padding: 5% 15%;
+    display: block;
+    align-content: center;
+}
+.seu_contato{ /* Estilos para a seção de contato */
+    padding-top: 5%;
+}
+.links{/* Estilos para os links na seção de links */
+    padding-top: 30px;
+    display: block;
+    justify-content: center;
+
+    gap: 50px;
+}
+.link_referencia{/* Estilos para o link de referência */
+    font-size: 110%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    width: 15%;
+    border-radius: 8px;
+    padding: 21.5px 0;
+    border:2px solid #611BDE;
+    text-decoration: none;
+    font-weight: 600;
+    color: #611BDE;
+}
+button{/* Estilos para os botões */
+    background-color: #59C6EB;
+    border-radius: 8px;
+    width: 5%;
+    border-color: #611BDE;
+    color: #611BDE;
+}
+.menu_link:hover{/* Estilos de hover para os links do menu */
+    color: white;
+}
+.link_referencia:hover{/* Estilos de hover para o link de referência */
+    color: white;
+}
+button:hover{ /* Estilos de hover para o botão */
+    background-color: #fff;
+}
+
+.rodape{ /* Estilos para o rodapé */
+    padding: 24px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #611BDE;
+    color: white;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+}
+@media(max-width: 1200px){ /* Media query para telas com largura máxima de 1200px */
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_link{
+        font-size: 16px;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .link_referencia{
+        width: auto;
+        padding: 5%;
+    }
+    button{
+        justify-items: center;
+        width: 50px;
+    }
+}

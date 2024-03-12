@@ -1,0 +1,165 @@
+/* Importa a fonte 'Cabin' do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+*{ /* Define estilos padrão para todos os elementos */
+    margin: 0;
+    padding: 0;
+    font-family:"Cabin", sans-serif;
+    font-optical-sizing: auto;;
+}
+body{ /* Estilos para o corpo da página */
+    box-sizing: border-box;
+    background-color: #59C6EB;
+    color: #611BDE;
+}
+.cabecalho{ /* Estilos para o cabeçalho */
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho_menu{ /* Estilos para o menu no cabeçalho */
+    display: flex;
+    gap:80px;
+}
+.menu_link{ /* Estilos para os links no menu */
+    color: #611BDE;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap:18px;
+}
+.apresentacao{ /* Estilos para a apresentação */
+    padding: 5% 15%;
+    display: flex;
+    
+    justify-content:space-between;
+    gap: 80px;
+}
+.conteudo{ /* Estilos para o conteúdo */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+h1{ /* Estilos para os títulos */
+    font-size: 28px;
+}
+p{ /* Estilos para os parágrafos */
+    font-size: 24px;
+}
+.faculdade{ /* Estilos para a seção de faculdade */
+    gap: 50px;
+}
+.faculdade_conteudo{ 
+    /* Estilos para o conteúdo da seção de faculdade */
+    padding-top: 5px;
+    display: block;
+    align-items: center;
+    gap: 50px;
+    
+}
+.idioma{ /* Estilos para a seção de idioma */
+    gap: 50px;
+    padding-top: 2%;
+}
+.idioma_conteudo{ /* Estilos para o conteúdo da seção de idioma */
+    padding-top: 5px;
+}
+.curso_javascript{ /* Estilos para a seção do curso de JavaScript */
+    gap: 50px;
+    padding-top: 2%;
+}
+.curso_javascript_conteudo{ /* Estilos para o conteúdo da seção do curso de JavaScript */
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    gap:50px;
+}
+.curso_html_css{ /* Estilos para a seção do curso de HTML e CSS */
+    gap: 50px;
+    padding-top: 2%;
+}
+.curso_html_css_conteudo{ /* Estilos para o conteúdo da seção do curso de HTML e CSS */
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-top: 5px;
+}
+.bootcamp{ /* Estilos para a seção do bootcamp */
+    gap: 50px;
+    padding-top: 2%;
+}
+.bootcamp_conteudo{ /* Estilos para o conteúdo da seção do bootcamp */
+    gap: 50px;
+    padding-top: 5px;
+}
+.certificado{ /* Estilos para os certificados */
+    height: auto;
+    width: 50%;
+}
+.certificado_html{ 
+    height: auto;
+    width: 60%;
+}
+.certificado_bootcamp{
+    width: 30%;
+}
+.menu_link:hover{ /* Estilos de hover para os links do menu */
+    color: white;
+}
+.rodape{ /* Estilos para o rodapé */
+    padding: 24px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #611BDE;
+    color: white;
+    margin-top: 50px;
+}
+@media(max-width: 1200px){   /* Media query para telas com largura máxima de 1200px */
+    .cabecalho{    
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_link{
+        font-size: 16px;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .conteudo{
+        padding: 5%;
+        width: auto;
+        flex-direction: column-reverse;
+    }
+    .idioma{
+        padding-top: 5%;
+    }
+    .curso_javascript{
+        flex-direction: column;
+        padding-top: 5%;
+    }
+    .curso_javascript_conteudo{
+        flex-direction: column;    
+        padding: 5px;
+        
+    }
+    .curso_html_css{
+        padding-top: 5%;
+    }
+    .curso_html_css_conteudo{
+        flex-direction: column;
+    }
+    .bootcamp{
+        padding-top: 5%;
+    }
+    .bootcamp_conteudo{
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .certificado_bootcamp{
+        width: 400px;
+    }
+}

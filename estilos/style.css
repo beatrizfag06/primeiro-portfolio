@@ -1,0 +1,112 @@
+/* Importa a fonte 'Cabin' do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+*{ /* Define estilos padrão para todos os elementos */
+    margin: 0;
+    padding: 0;
+    font-family:"Cabin", sans-serif; 
+    font-optical-sizing: auto; 
+}
+body{ /* Estilos para o corpo da página */
+    box-sizing: border-box;
+    background-color: #59C6EB;
+    color: #611BDE;
+}
+.cabecalho{ /* Estilos para o cabeçalho */
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho_menu{ /* Estilos para o menu no cabeçalho */
+    display: flex;
+    gap:80px;
+}
+.menu_link{ /* Estilos para os links no menu */
+    color: #611BDE;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    gap:18px;
+}
+.titulo{ /* Estilos para o título */
+    text-align: center;
+    font-size: 38px;
+}
+.fotoperfil{ /* Estilos para a foto de perfil */
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+}
+.apresentacao{ /* Estilos para a apresentação */
+    padding: 5% 15%;
+    display: block;
+    align-items:center;
+    justify-content:space-between;
+    gap: 80px;
+}
+.conteudo{ /* Estilos para o conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+p{ /* Estilos para os parágrafos */
+    font-size: 28px;
+}
+.navegacao{ /* Estilos para a navegação */
+    display: block;
+    justify-content: center;
+    gap: 16px;
+}
+.menu_link:hover{
+    color: white; /* Define a cor do texto ao passar o mouse */
+}
+.link_referencia{ /* Estilos para o link de referência */
+    font-size: 125%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    width: 20%;
+    border-radius: 8px;
+    padding: 21.5px 0;
+    border:2px solid #611BDE;
+    text-decoration: none;
+    font-weight: 600;
+    color: #611BDE;
+}
+.link_referencia:hover{
+    color: white;
+}
+.rodape{ /* Estilos para o rodapé */
+    padding: 24px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #611BDE;
+    color: white;
+    margin-top: 50px;
+}
+@media(max-width: 1200px){ /* Media query para telas com largura máxima de 1200px */
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+        align-items: center;
+    }
+    .menu_link{
+        font-size: 16px;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .conteudo{
+        width: auto;
+    }
+    .link_referencia{
+        width: auto;
+        padding: 5%;
+    }
+}
